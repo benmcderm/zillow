@@ -1,6 +1,6 @@
 function makeAsyncCall(address, cityState) {
   const PROXY_URL = 'http://www.zillow.com/webservice/GetSearchResults.htm';
-  const ZWSID = 'YOUR ZWSID HERE';
+  const ZWSID = 'X1-ZWz19me3z72497_5ywzw';
   const updatedAddress = address.split(' ').join('+');
   const updatedCityState = cityState.split(', ').join('+');
   const url = `${PROXY_URL}?zws-id=${ZWSID}&address=${updatedAddress}&citystatezip=${updatedCityState}`;
@@ -15,4 +15,4 @@ function makeAsyncCall(address, cityState) {
   xhr.send();
 }
 
-makeAsyncCall('111 Main St', 'Oakland, CA');
+makeAsyncCall('2720 Fremont Ave S','Minneapolis, MN');

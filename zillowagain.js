@@ -1,6 +1,6 @@
 function makeAsyncCall(address, cityState) {
   const PROXY_URL = 'http://www.zillow.com/webservice/GetSearchResults.htm';
-  const ZWSID = 'X1-ZWz19me3z72497_5ywzw';
+  const ZWSID = 'YOUR ZILLOW ID HERE';
   const updatedAddress = address.split(' ').join('+');
   const updatedCityState = cityState.split(', ').join('+');
   const url = `${PROXY_URL}?zws-id=${ZWSID}&address=${updatedAddress}&citystatezip=${updatedCityState}`;
